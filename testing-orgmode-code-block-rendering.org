@@ -35,7 +35,7 @@ Tue Aug 20 21:14:51 UTC 2019
 
 * Code Block: both
 
-#+BEGIN_SRC shell :eval never :exports results
+#+BEGIN_SRC shell :eval never :exports both
 date
 #+END_SRC
 
