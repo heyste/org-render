@@ -33,6 +33,17 @@ date
 Tue Aug 20 21:14:51 UTC 2019
 #+END_EXAMPLE
 
+* Code Block: both
+
+#+BEGIN_SRC shell :eval never :exports results
+date
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_EXAMPLE
+Tue Aug 20 21:14:51 UTC 2019
+#+END_EXAMPLE
+
 * Code Block: none
 
 #+BEGIN_SRC shell :eval never :exports none
