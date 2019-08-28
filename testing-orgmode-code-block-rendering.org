@@ -1,6 +1,7 @@
 #+TITLE: Testing Orgmode Code Block Rendering  
 
-* Code Block: default
+* Code Blocks
+** default
 
 #+BEGIN_SRC shell :eval never
 date
@@ -11,49 +12,66 @@ date
 Tue Aug 20 21:14:51 UTC 2019
 #+END_EXAMPLE
 
-* Code Block: code
+** code
 
-#+BEGIN_SRC shell :eval never :exports code
-date
-#+END_SRC
+ #+BEGIN_SRC shell :eval never :exports code
+ date
+ #+END_SRC
 
-#+RESULTS:
-#+BEGIN_EXAMPLE
-Tue Aug 20 21:14:51 UTC 2019
-#+END_EXAMPLE
+ #+RESULTS:
+ #+BEGIN_EXAMPLE
+ Tue Aug 20 21:14:51 UTC 2019
+ #+END_EXAMPLE
 
-* Code Block: results
+** results
 
-#+BEGIN_SRC shell :eval never :exports results
-date
-#+END_SRC
+ #+BEGIN_SRC shell :eval never :exports results
+ date
+ #+END_SRC
 
-#+RESULTS:
-#+BEGIN_EXAMPLE
-Tue Aug 20 21:14:51 UTC 2019
-#+END_EXAMPLE
+ #+RESULTS:
+ #+BEGIN_EXAMPLE
+ Tue Aug 20 21:14:51 UTC 2019
+ #+END_EXAMPLE
 
-* Code Block: both
+** both
 
-#+BEGIN_SRC shell :eval never :exports both
-date
-#+END_SRC
+ #+BEGIN_SRC shell :eval never :exports both
+ date
+ #+END_SRC
 
-#+RESULTS:
-#+BEGIN_EXAMPLE
-Tue Aug 20 21:14:51 UTC 2019
-#+END_EXAMPLE
+ #+RESULTS:
+ #+BEGIN_EXAMPLE
+ Tue Aug 20 21:14:51 UTC 2019
+ #+END_EXAMPLE
 
-* Code Block: none
+** none
 
-#+BEGIN_SRC shell :eval never :exports none
-date
-#+END_SRC
+ #+BEGIN_SRC shell :eval never :exports none
+ date
+ #+END_SRC
 
-#+RESULTS:
-#+BEGIN_EXAMPLE
-Tue Aug 20 21:14:51 UTC 2019
-#+END_EXAMPLE
+ #+RESULTS:
+ #+BEGIN_EXAMPLE
+ Tue Aug 20 21:14:51 UTC 2019
+ #+END_EXAMPLE
+
+* Test Cases
+** Directory Listing
+
+#+BEGIN_SRC shell :exports both
+tree -d /usr/local/elpa-mirror                                                                                   
+#+END_SRC                                                                                                        
+
+#+RESULTS:                                                                                                       
+#+begin_EXAMPLE                                                                                                  
+- /usr/local/elpa-mirror                                                                                         
+- ├── gnu                                                                                                        
+- ├── melpa                                                                                                      
+- ├── org                                                                                                        
+- └── stable-melpa                                                                                               
+- 4 directories                                                                                                  
+#+end_EXAMPLE
 
 * References
 
