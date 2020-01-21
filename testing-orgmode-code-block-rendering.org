@@ -76,3 +76,4 @@ tree -d /usr/local/elpa-mirror
 * References
 
 - [[https://orgmode.org/manual/Exporting-code-blocks.html][https://orgmode.org/manual/Exporting-code-blocks.html]]
+- [[https://github.com/bdewey/org-ruby][https://github.com/bdewey/org-ruby]]
